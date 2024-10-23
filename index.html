@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en" class="h-auto overflow-hidden">
+  <head>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/rrrcoin.png" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Monsterrr</title>
+  </head>
+  <body class="overscroll-y-contain touch-none">
+    <div id="root" class="select-none"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+    <script>
+      document.body.addEventListener(
+        "touchstart",
+        function (event) {
+          if (event.touches.length > 1) {
+            event.preventDefault();
+          }
+        },
+        { passive: false },
+      );
+
+      document.body.addEventListener(
+        "touchmove",
+        function (event) {
+          if (event.touches.length > 1) {
+            event.preventDefault();
+          }
+        },
+        { passive: false },
+      );
+
+      const eventParams = { passive: false };
+    </script>
+  </body>
+</html>
