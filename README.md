@@ -1,0 +1,2 @@
+DON'T FORGET TO UPGRADE DEPS
+# TgAppTemplate
