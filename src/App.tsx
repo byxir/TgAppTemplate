@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
+import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { useEffect, useState } from "react";
@@ -7,12 +8,12 @@ import { postEvent } from "@telegram-apps/sdk-react";
 import { Toaster } from "./components/ui/toaster";
 import { routes } from "./routes";
 import Wrapper from "./components/Wrapper";
-import { isDesktop } from "react-device-detect";
-import LoadingPage from "./components/LoadingPage";
+// import { isDesktop } from "react-device-detect";
+// import LoadingPage from "./components/LoadingPage";
 
-import { useToast } from "./components/ui/use-toast";
+// import { useToast } from "./components/ui/use-toast";
 
-import DesktopPage from "./pages/DesktopPage";
+// import DesktopPage from "./pages/DesktopPage";
 
 function App() {
   useEffect(() => {
@@ -28,7 +29,7 @@ function App() {
 
   const [appHeight, setAppHeight] = useState(0);
 
-  const { toast } = useToast();
+  // const { toast } = useToast();
 
   useEffect(() => {
     setTimeout(() => {
